@@ -1,13 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./fonts/proximanova_light.otf");
+}
+:root {
+  --blue: #40bfff;
+  --cimrson: #ff4858;
+  --whiteblue: #bcddfe;
+  --gray: #373737;
+}
 *,
 *::after,
-*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-.container  {
-    width:90%;
-    margin: 0 auto;
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+footer {
+  background-color: var(--whiteblue);
+}
+footer .main {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+footer .main .col-2 {
+  color: var(--gray);
+  font-size: 12px;
+  line-height: 15px;
+}
+footer .main .col-2 .col__img {
+  display: flex;
+  align-items: center;
+  font-family: Poppins;
+  font-weight: bold;
+  color: #22262a;
+  margin-bottom: 20px;
+}
+footer .main .col-2 h4 {
+  font-family: Poppins;
+  font-weight: bold;
+  margin-left: 5px;
+  font-size: 18px;
+}
+footer .main .col-2 h3 {
+  font-family: Poppins;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+footer .main .col-2 p {
+  font-family: Proxima Nova;
+}
+footer .main .col-2 .col__icon img {
+  margin: 40px 40px 0 0;
+}
+footer .second {
+  display: flex;
+  justify-content: space-around;
+}
+footer .second .col-2 {
+  margin-top: 40px;
+  font-family: Proxima Nova;
+}
+footer .second .col-2 h3 {
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--gray);
+  margin-bottom: 30px;
+}
+
+footer .second .col-2 p {
+  font-size: 12px;
+  line-height: 21px;
+  color: var(--gray);
+  margin-bottom: 30px;
+}
+footer .end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+footer .end a {
+  text-decoration: none;
+  font-family: Proxima Nova;
+  font-size: 14px;
+  line-height: 17px;
+  color: #c1c8ce;
 }
