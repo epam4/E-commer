@@ -1,0 +1,143 @@
+.product-grid_container {
+  display: flex;
+  justify-content: space-between;
+}
+.product-right-content {
+  background-color: #039449;
+  width: 75%;
+  height: auto;
+}
+.product-left-content {
+  width: 25%;
+  height: auto;
+  margin-right: 32px;
+}
+.product-left-content .hot-deals {
+  padding: 20px;
+  height: 371px;
+  width: 270px;
+  border-radius: 0px;
+  background: #f6f7f8;
+  margin-bottom: 30px;
+}
+.product-left-content .prices {
+  height: 144px;
+  width: 270px;
+  padding: 20px;
+  background: #f6f7f8;
+  border-radius: 0px;
+  margin-bottom: 30px;
+}
+.color form input {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+.color form input:not(:last-child){
+  margin-right: 17px;
+
+}
+.color form input:first-child {
+  accent-color: rgba(0, 108, 255, 1);
+}
+.color form input:nth-child(2){
+  accent-color: #FC3E39;
+}
+.color form input:nth-child(3){
+  accent-color: #171717;
+}
+.color form input:nth-child(4){
+  accent-color: #FFF600;
+}
+.color form input:nth-child(5){
+  accent-color: #FF00B4;
+}
+.color form input:nth-child(6){
+  accent-color: #EFDFDF;
+}
+.product-left-content .prices p {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+.product-left-content .prices input {
+  width: 100%;
+}
+.color {
+  height: 123px;
+  width: 270px;
+  border-radius: 0px;
+  padding: 20px;
+  background: #f6f7f8;
+}
+.product-left-content h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #22262a;
+  margin-bottom: 25px;
+}
+.product-left-content a {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #262626;
+  transition: 0.2s ease-in-out;
+}
+.product-left-content a:hover {
+  color: #33a0ff;
+}
+.product-right-content .adidas-sneakers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 297px;
+  width: 100%;
+  border-radius: 0px;
+  background: #40bfff;
+}
+.product-right-content .adidas-sneakers_img {
+  background-color: #832524;
+}
+.product-right-content .adidas-sneakers_img img {
+  height: 290px;
+  width: 100%;
+  border-radius: 0px;
+}
+.product-right-content .adidas-sneaker_text {
+  height: 185px;
+  width: 351px;
+  border-radius: 0px;
+  background-color: #532435;
+}
+.product-right-content .adidas-sneaker_text h1 {
+  padding-bottom: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+  color: #ffffff;
+}
+.product-right-content .adidas-sneaker_text p {
+  padding-bottom: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.product-right-content .adidas-sneaker_text a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+}
