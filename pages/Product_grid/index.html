@@ -6,9 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../Product_grid/style.css" />
     <link rel="stylesheet" href="../../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>E-comm</title>
   </head>
   <body>
+    <!-- header section starts -->
+    <section class="header navbar-products">
+      <div class="top-nav wrapper-container">
+        <div class="top-nav-left">
+          <div class="language">
+            <select name="language" id="language">
+              <option value="uz">UZ</option>
+              <option value="ru">RU</option>
+              <option value="en">EN</option>
+            </select>
+          </div>
+          <div class="course">
+            <select name="course" id="course">
+              <option value="uzs">UZS</option>
+              <option value="rub">RUB</option>
+              <option value="usd">USD</option>
+            </select>
+          </div>
+        </div>
+        <div class="top-nav-right">
+          <a href="#" class="my-profile">
+            <i class="fa-regular fa-user"></i> My Profile
+          </a>
+          <a href="#" class="my-cart">
+            <i class="fa-solid fa-cart-shopping shop-cart"></i> Items</a
+          >
+          <a href="#" class="my-cart">$0.00<i class="fas fa-search"></i> </a>
+        </div>
+      </div>
+      <div class="bottom-nav wrapper-container">
+        <div class="logo">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 97 98"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              y="0.778564"
+              width="96.5844"
+              height="96.5844"
+              rx="16"
+              fill="#40BFFF"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M68.1838 45.2765C70.2792 47.372 70.2792 50.7694 68.1838 52.8649L52.0864 68.9623C49.9909 71.0578 46.5935 71.0578 44.498 68.9623L28.4006 52.8649C26.3051 50.7694 26.3051 47.372 28.4006 45.2765L44.498 29.1791C46.5935 27.0837 49.9909 27.0837 52.0864 29.1791L68.1838 45.2765ZM48.2922 40.5617L39.7832 49.0707L48.2922 57.5797L56.8012 49.0707L48.2922 40.5617Z"
+              fill="white"
+            />
+          </svg>
+          E-Comm
+        </div>
+        <nav class="nav">
+          <a href="home" class="lists" id="lists">home</a>
+          <a href="bags" class="lists" id="lists">bags</a>
+          <a href="sneakers" class="lists" id="lists">sneakers</a>
+          <a href="belt" class="lists active" id="lists">belt</a>
+          <a href="contact" class="lists" id="lists">contact</a>
+        </nav>
+      </div>
+      <i id="menu-btn" class="fas fa-bars"> </i>
+    </section>
+
     <div class="wrapper-container">
       <div class="product-grid_container">
         <div class="product-left-content">
@@ -88,7 +175,27 @@
           <div class="product-card_container">
             <div class="product-card_row">
               <div class="product-card_box">
-                <img class="box_img_one" src="../../img/sneakers_black.png" />
+                <div class="containerr">
+                  <img class="box_img_one" src="../../img/sneakers_black.png" />
+                  <div class="overlay">
+                    <div class="text">
+                      <a href="#" class="bor">
+                        <img
+                          src="../../icon/heart_blue.png"
+                          width="17.8"
+                          height="15.6"
+                        />
+                      </a>
+                      <a href="#" class="bor">
+                        <img
+                          src="../../icon/cart_blue.png"
+                          width="17.77"
+                          height="17.83"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <h1>Nike Air Max 270 React</h1>
                 <div class="star_box">
                   <img src="../../icon/star_yellow.png" />
@@ -104,7 +211,27 @@
                 </div>
               </div>
               <div class="product-card_box">
-                <img class="box_img_one" src="../../img/bag_red.png" />
+                <div class="containerr">
+                  <img class="box_img_one" src="../../img/bag_red.png" />
+                  <div class="overlay">
+                    <div class="text">
+                      <a href="#" class="bor">
+                        <img
+                          src="../../icon/heart_blue.png"
+                          width="17.8"
+                          height="15.6"
+                        />
+                      </a>
+                      <a href="#" class="bor">
+                        <img
+                          src="../../icon/cart_blue.png"
+                          width="17.77"
+                          height="17.83"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <h1>Nike Air Max 270 React</h1>
                 <div class="star_box">
                   <img src="../../icon/star_yellow.png" />
@@ -120,7 +247,27 @@
                 </div>
               </div>
               <div class="product-card_box">
-                <img class="box_img_one" src="../../img/bag_wheat.png" />
+                <div class="containerr">
+                  <img class="box_img_one" src="../../img/bag_wheat.png" />
+                  <div class="overlay">
+                    <div class="text">
+                      <a href="#" class="bor">
+                        <img
+                          src="../../icon/heart_blue.png"
+                          width="17.8"
+                          height="15.6"
+                        />
+                      </a>
+                      <a href="#" class="bor">
+                        <img
+                          src="../../icon/cart_blue.png"
+                          width="17.77"
+                          height="17.83"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <h1>Nike Air Max 270 React</h1>
                 <div class="star_box">
                   <img src="../../icon/star_yellow.png" />
@@ -136,7 +283,27 @@
                 </div>
               </div>
               <div class="product-card_box">
-                <img class="box_img_one" src="../../img/sneakers_footer.png" />
+                <div class="containerr">
+                  <img class="box_img_one" src="../../img/sneakers_footer.png" />
+                  <div class="overlay">
+                    <div class="text">
+                      <a href="#" class="bor">
+                        <img
+                          src="../../icon/heart_blue.png"
+                          width="17.8"
+                          height="15.6"
+                        />
+                      </a>
+                      <a href="#" class="bor">
+                        <img
+                          src="../../icon/cart_blue.png"
+                          width="17.77"
+                          height="17.83"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <h1>Nike Air Max 270 React</h1>
                 <div class="star_box">
                   <img src="../../icon/star_yellow.png" />
@@ -152,7 +319,27 @@
                 </div>
               </div>
               <div class="product-card_box">
-                <img class="box_img_one" src="../../img/sneakers_yellow.png" />
+                <div class="containerr">
+                  <img class="box_img_one" src="../../img/sneakers_yellow.png" />
+                  <div class="overlay">
+                    <div class="text">
+                      <a href="#" class="bor">
+                        <img
+                          src="../../icon/heart_blue.png"
+                          width="17.8"
+                          height="15.6"
+                        />
+                      </a>
+                      <a href="#" class="bor">
+                        <img
+                          src="../../icon/cart_blue.png"
+                          width="17.77"
+                          height="17.83"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <h1>Nike Air Max 270 React</h1>
                 <div class="star_box">
                   <img src="../../icon/star_yellow.png" />
@@ -168,7 +355,27 @@
                 </div>
               </div>
               <div class="product-card_box">
-                <img class="box_img_one" src="../../img/sneakers_2.png" />
+                <div class="containerr">
+                  <img class="box_img_one" src="../../img/sneakers_2.png" />
+                  <div class="overlay">
+                    <div class="text">
+                      <a href="#" class="bor">
+                        <img
+                          src="../../icon/heart_blue.png"
+                          width="17.8"
+                          height="15.6"
+                        />
+                      </a>
+                      <a href="#" class="bor">
+                        <img
+                          src="../../icon/cart_blue.png"
+                          width="17.77"
+                          height="17.83"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <h1>Nike Air Max 270 React</h1>
                 <div class="star_box">
                   <img src="../../icon/star_yellow.png" />
@@ -184,7 +391,27 @@
                 </div>
               </div>
               <div class="product-card_box">
-                <img class="box_img_one" src="../../img/sneakers_blue.png" />
+                <div class="containerr">
+                  <img class="box_img_one" src="../../img/sneakers_blue.png" />
+                  <div class="overlay">
+                    <div class="text">
+                      <a href="#" class="bor">
+                        <img
+                          src="../../icon/heart_blue.png"
+                          width="17.8"
+                          height="15.6"
+                        />
+                      </a>
+                      <a href="#" class="bor">
+                        <img
+                          src="../../icon/cart_blue.png"
+                          width="17.77"
+                          height="17.83"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <h1>Nike Air Max 270 React</h1>
                 <div class="star_box">
                   <img src="../../icon/star_yellow.png" />
@@ -200,7 +427,27 @@
                 </div>
               </div>
               <div class="product-card_box">
-                <img class="box_img_one" src="../../img/sneakers_black.png" />
+                <div class="containerr">
+                  <img class="box_img_one" src="../../img/sneakers_black.png" />
+                  <div class="overlay">
+                    <div class="text">
+                      <a href="#" class="bor">
+                        <img
+                          src="../../icon/heart_blue.png"
+                          width="17.8"
+                          height="15.6"
+                        />
+                      </a>
+                      <a href="#" class="bor">
+                        <img
+                          src="../../icon/cart_blue.png"
+                          width="17.77"
+                          height="17.83"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <h1>Nike Air Max 270 React</h1>
                 <div class="star_box">
                   <img src="../../icon/star_yellow.png" />
@@ -216,7 +463,27 @@
                 </div>
               </div>
               <div class="product-card_box">
-                <img class="box_img_one" src="../../img/sneakers_blue.png" />
+                <div class="containerr">
+                  <img class="box_img_one" src="../../img/sneakers_blue.png" />
+                  <div class="overlay">
+                    <div class="text">
+                      <a href="#" class="bor">
+                        <img
+                          src="../../icon/heart_blue.png"
+                          width="17.8"
+                          height="15.6"
+                        />
+                      </a>
+                      <a href="#" class="bor">
+                        <img
+                          src="../../icon/cart_blue.png"
+                          width="17.77"
+                          height="17.83"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <h1>Nike Air Max 270 React</h1>
                 <div class="star_box">
                   <img src="../../icon/star_yellow.png" />
@@ -236,5 +503,93 @@
         </div>
       </div>
     </div>
+    <!-- <footer>
+      <div class="container">
+        <div class="main df">
+          <div class="col-4 col-xs-12">
+            <div class="col__img">
+              <img src="../../icon/Icon.png" alt="logo" />
+              <h4>E-COMM</h4>
+            </div>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever.Since the 1500s, when an unknown printer.
+            </p>
+          </div>
+          <div class="col-4 pt col-xs-12">
+            <h3>Follow Us</h3>
+            <p>
+              Since the 1500s, when an unknown printer took a galley of type and
+              scrambled.
+            </p>
+            <div class="col__icon">
+              <a href="#"
+                ><img src="../../icon/facebook.png" alt="facebook"
+              /></a>
+              <a href="#"><img src="../../icon/twitter.png" alt="twitter" /></a>
+            </div>
+          </div>
+          <div class="col-4 pt col-xs-12">
+            <h3>Contact Us</h3>
+            <p>E-Comm , 4578 Marmora Road, Glasgow D04 89GR</p>
+          </div>
+        </div>
+        <div class="second products df">
+          <div class="col-3 col-xs-12">
+            <h3>Infomation</h3>
+            <ul>
+              <li>Our Offers</li>
+              <li>About Us</li>
+              <li>Infomation</li>
+              <li>Privacy Policy</li>
+              <li>Terms & Conditions</li>
+            </ul>
+          </div>
+          <div class="col-3 col-xs-12">
+            <h3>Service</h3>
+            <ul>
+              <li>Our Offers</li>
+              <li>About Us</li>
+              <li>Infomation</li>
+              <li>Privacy Policy</li>
+              <li>Terms & Conditions</li>
+            </ul>
+          </div>
+          <div class="col-3 col-xs-12">
+            <h3>My Account</h3>
+            <ul>
+              <li>Our Offers</li>
+              <li>About Us</li>
+              <li>Infomation</li>
+              <li>Privacy Policy</li>
+              <li>Terms & Conditions</li>
+            </ul>
+          </div>
+          <div class="col-3 col-xs-12">
+            <h3>Our Offers</h3>
+            <ul>
+              <li>Our Offers</li>
+              <li>About Us</li>
+              <li>Infomation</li>
+              <li>Privacy Policy</li>
+              <li>Terms & Conditions</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="end df">
+          <div class="end__link col-xs-12">
+            <a href="#">© 2022Ecommerce theme by Infinity Team</a>
+          </div>
+          <div class="end__img col-xs-12 mt-3">
+            <img src="../../icon/Western-union.png" alt="" />
+            <img src="../../icon/footer_icon.png" alt="" />
+            <img src="../../icon/Paypal.png" alt="" />
+            <img src="../../icon/vise.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer> -->
   </body>
 </html>
