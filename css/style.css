@@ -1201,7 +1201,7 @@ body {
   }
   .header-search-section .search-icon {
     position: absolute;
-    left: 20px;
+    left: 10px;
     color: var(--active);
   }
 
@@ -1849,7 +1849,7 @@ body {
   }
   .header-search-section .search-icon {
     position: absolute;
-    left: 40px;
+    left: 35px;
     color: var(--active);
   }
 
