@@ -1201,7 +1201,7 @@ body {
   }
   .header-search-section .search-icon {
     position: absolute;
-    left: 20px;
+    left: 20px !important ;
     color: var(--active);
   }
 
