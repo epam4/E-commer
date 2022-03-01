@@ -882,7 +882,7 @@ body {
   }
   .header-search-section .search-icon {
     position: absolute;
-    left: 20px;
+    left: 5px;
     color: var(--active);
   }
 
