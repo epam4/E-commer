@@ -194,6 +194,7 @@
 .product-card_container {
   width: 100%;
   height: auto;
+  margin-bottom: 15vh;
 }
 .product-card_row {
   display: flex;
