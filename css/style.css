@@ -236,7 +236,7 @@ i.shop-cart::after {
   align-items: center;
   /* border-top: 1px solid; */
   border-top: 2px solid rgba(250, 250, 251, 1);
-  padding-top: 20px;
+  padding: 20px 0;
   /* border-top-color: var(--bordercolor); */
   /* margin: 20px auto; */
   font-family: poppins, sans-serif;
