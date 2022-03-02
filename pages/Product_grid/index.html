@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../Product_grid/style.css" />
     <link rel="stylesheet" href="../../css/style.css" />
+    <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -13,27 +14,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <title>E-comm</title>
   </head>
-  <body>
-
-    <!-- header section starts -->
-    <section class="header navbar-products">
+  <body><!-- header section starts -->
+    <div class="header-search-section">
+      <input type="search" name="text" id="search"
+      placeholder="search...">
+      <ion-icon class="search-icon" name="search-outline"></ion-icon>
+      <ion-icon class="heart-red" name="heart-outline"></ion-icon>
+      <ion-icon name="notifications-outline"></ion-icon>
+    </div>
+    <section class="header" >
       <div class="top-nav container">
         <div class="top-nav-left">
           <div class="language">
@@ -53,14 +44,15 @@
         </div>
         <div class="top-nav-right">
           <a href="#" class="my-profile">
-            <i class="fa-regular fa-user"></i> My Profile
-          </a>
+            <i class="fa-regular fa-user"></i> My Profile</a
+          >
           <a href="#" class="my-cart">
-            <i class="fa-solid fa-cart-shopping shop-cart"></i> Items</a
+            <i class="fa-solid fa-cart-shopping"></i> Items</a
           >
           <a href="#" class="my-cart">$0.00<i class="fas fa-search"></i> </a>
         </div>
       </div>
+
       <div class="bottom-nav container">
         <div class="logo">
           <svg
@@ -87,15 +79,104 @@
           E-Comm
         </div>
         <nav class="nav">
-          <a href="home" class="lists" id="lists">home</a>
-          <a href="bags" class="lists" id="lists">bags</a>
-          <a href="sneakers" class="lists" id="lists">sneakers</a>
-          <a href="belt" class="lists active" id="lists">belt</a>
-          <a href="contact" class="lists" id="lists">contact</a>
-        </nav>
+          <ul class="nav-links">
+             <li class="list active">
+               <a href="#home">
+                 <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                 <span class="home text">home</span>
+               </a>
+             </li>
+             <li class="list">
+               <a href="#bags">
+                 <span class="icon">
+                 <ion-icon name="cart-outline"></ion-icon>
+               </span>
+                 <span class="bags text">bags</span>
+               </a>
+             </li>
+             <li class="list">
+               <a href="#senakers">
+                 <span class="icon">
+                   <ion-icon name="pricetag-outline"></ion-icon>
+                 </span>
+                 <span class="senakers text">sneakers</span>
+               </a>
+             </li>
+             <li class="list">
+               <a href="#belt">
+                 <span class="icon">
+                   <!-- <ion-icon name="pricetag-outline"></ion-icon> -->
+                 </span>
+                 <span class="belt text"></span>
+               </a>
+             </li>
+             <li class="list">
+               <a href="#portfolio">
+                 <span class="icon"
+                   >
+                   <ion-icon name="person-outline"></ion-icon>
+                  </span>
+                 <span class="portfolio text">contact</span>
+               </a>
+             </li>
+
+
+             <div class="indicator"></div>
+           </ul>
+         </nav>
       </div>
-      <i id="menu-btn" class="fas fa-bars"> </i>
     </section>
+
+    <!-- responsive navbar -->
+    <nav class="nav hidden-nav">
+     <ul class="nav-links">
+        <li class="list active">
+          <a href="#home">
+            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+            <span class="home text">home</span>
+          </a>
+        </li>
+        <li class="list ">
+          <a href="#explore">
+            <span class="icon">
+              <ion-icon class="search-icon" name="search-outline"></ion-icon>
+
+            </span>
+            <span class="home text">explore</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#bags">
+            <span class="icon">
+            <ion-icon name="cart-outline"></ion-icon>
+          </span>
+            <span class="bags text">carts</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#senakers">
+            <span class="icon">
+              <ion-icon name="pricetag-outline"></ion-icon>
+            </span>
+            <span class="senakers text">offer</span>
+          </a>
+        </li>
+
+        <li class="list">
+          <a href="#portfolio">
+            <span class="icon"
+              >
+              <ion-icon name="person-outline"></ion-icon>
+             </span>
+            <span class="portfolio text">accaunt</span>
+          </a>
+        </li>
+
+
+        <div class="indicator"></div>
+      </ul>
+    </nav>
+
     <section class="link-content">
       <div class="links">
         <a href="#">Home</a>
@@ -612,5 +693,17 @@
         </div>
       </div>
     </footer>
+
+
+    <script src="./js/app.js"></script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
   </body>
 </html>
